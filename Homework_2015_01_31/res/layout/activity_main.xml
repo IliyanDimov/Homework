@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txt_addMedication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:padding="@dimen/title_padding"
+        android:text="@string/add_medication"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large" />
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_requiredFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/title_padding"
+                android:text="@string/required_fields"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/txt_medicalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/title_padding"
+                android:text="@string/medication_information"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal" />
+
+            <EditText
+                android:id="@+id/etxt_medication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_padding"
+                android:layout_marginRight="@dimen/title_padding"
+                android:background="@color/white"
+                android:hint="@string/medication"
+                android:padding="@dimen/title_padding"
+                android:textSize="@dimen/small" />
+
+            <EditText
+                android:id="@+id/txt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_padding"
+                android:layout_marginRight="@dimen/title_padding"
+                android:background="@color/white"
+                android:padding="@dimen/title_padding"
+                android:text="@string/reason_for_taking"
+                android:textSize="@dimen/small" />
+
+            <EditText
+                android:id="@+id/etxt_howMany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_padding"
+                android:layout_marginRight="@dimen/title_padding"
+                android:background="@color/white"
+                android:padding="@dimen/title_padding"
+                android:text="@string/how_many"
+                android:textSize="@dimen/small" />
+
+            <EditText
+                android:id="@+id/etxt_howOften"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_padding"
+                android:layout_marginRight="@dimen/title_padding"
+                android:background="@color/white"
+                android:padding="@dimen/title_padding"
+                android:text="@string/how_often"
+                android:textSize="@dimen/small" />
+
+            <CheckBox
+                android:id="@+id/chk_asNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/title_padding"
+                android:text="@string/med_as_needed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small" />
+
+            <Button
+                android:id="@+id/img_pills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pills"
+                android:text="@string/upload_photo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small"
+                android:drawablePadding="@dimen/title_padding"                
+                android:background="@color/light_blue"
+                android:padding="@dimen/title_padding" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baby_blue"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_addInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/additional_info"
+                    android:textSize="@dimen/normal" />
+
+                <EditText
+                    android:id="@+id/etxt_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:hint="@string/quantity"
+                    android:padding="@dimen/title_padding"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_numOfRefills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:hint="@string/number_of_refills"
+                    android:padding="@dimen/title_padding"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/start_date"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/end_date"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_specialInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/special_instructions"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_prescrDr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:text="@string/prescrib_dr"
+                    android:padding="@dimen/title_padding"
+                    android:textSize="@dimen/small" />
+
+                <EditText
+                    android:id="@+id/etxt_pharmacyFilled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/pharmacy"
+                    android:textSize="@dimen/small" />
+                
+                <TextView
+                    android:id="@+id/txt_prescriptionRefill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/prescription_refill"
+                    android:textSize="@dimen/normal" />
+                
+                <Switch
+                    android:id="@+id/switch_refillReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/refill_reminders"
+                    android:textSize="@dimen/small" />
+                
+                <EditText
+                    android:id="@+id/etxt_numberOfDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding"
+                    android:layout_marginRight="@dimen/title_padding"
+                    android:layout_marginTop="@dimen/title_padding"
+                    android:background="@color/white"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/select_number_days"
+                    android:textSize="@dimen/small" />
+                
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_save_margin"
+                    android:background="@color/light_blue"
+                    android:padding="@dimen/title_padding"
+                    android:text="@string/save"
+                    android:textSize="@dimen/normal"
+                    android:textColor="@color/white" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
